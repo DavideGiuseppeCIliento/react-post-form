@@ -112,6 +112,7 @@ export default function Form() {
           name="public"
           checked={dataForm.public}
           onChange={HandleDataForm}
+          value="Public"
         />
         <label className="form-check-label" htmlFor="public" required>
           Public
