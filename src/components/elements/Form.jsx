@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Alert } from "bootstrap";
 
 const urlApi = "https://67c5b4f3351c081993fb1ab6.mockapi.io/api/posts";
 
@@ -27,8 +28,17 @@ export default function Form() {
 
   // ## FUNZIONE INVIO FORM
   const HandleFormSubmit = (e) => {
-    e.disable.default();
+    e.preventDefault();
+
+    // Controllo sul Checked
+    if (!dataForm.public) {
+      alert("Ricordarti la Checkbox!");
+
+      return;
+    }
+
     apiRequest();
+    setDataForm(inizializedPost);
   };
 
   // --- CHIAMATA API
