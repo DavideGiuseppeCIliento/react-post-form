@@ -1,0 +1,53 @@
+/* CSS ROOT */
+#root {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* CSS CORNICE COLONNA TABSGRID */
+.bordo-soft {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+}
+
+/* CSS TAB */
+
+.tab-title {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  padding: 15px;
+}
+
+.tab-title:hover {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  background-color: white;
+  color: #333;
+  padding: 15px;
+}
+
+/* CSS TAB */
+
+.visibile {
+  display: block;
+}
+
+.nascosto {
+  display: none;
+}
+
+/* COLORE TASTO TAB CLICK */
+
+.tab-title.tab-activate {
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+}
